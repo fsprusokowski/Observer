@@ -34,9 +34,9 @@ namespace Observer.Class
 
         public void NotifyAll()
         {
-            foreach( var obs in Investors)
+            foreach( var investor in Investors)
             {
-                obs.Update();
+                investor.Update();
                 Notified++;
             }
         }
